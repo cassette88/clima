@@ -8,7 +8,7 @@ double longitude = 0;
 double latitude = 0;
 
 
-void getCurrentLocation() async {
+Future getCurrentLocation() async {
     try {
     Position position = await Geolocator().getCurrentPosition(desiredAccuracy: LocationAccuracy.low);
     //print(position);
